@@ -3,3 +3,10 @@
 #define DYNAMIC_KEYMAP_LAYER_COUNT 3
 
 #define MASTER_RIGHT
+
+#undef ENCODERS_PAD_A
+#undef ENCODERS_PAD_B
+
+#define ENCODERS_PAD_A { F4 }
+#define ENCODERS_PAD_B { F5 }
+#define ENCODER_RESOLUTION 4

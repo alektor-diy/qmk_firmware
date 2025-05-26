@@ -7,10 +7,10 @@
     "features": {
         "bootmagic": true,
         "command": false,
-        "console": true,
+        "console": false,
         "extrakey": true,
         "mousekey": true,
-        "nkro": false
+        "nkro": false,
     },
     "matrix_pins": {
         "cols": ["D0", "D4", "C6", "D7", "E6", "B4", "B5", "D3", "D2"],
@@ -29,6 +29,12 @@
             "protocol": "serial"
         },
         "soft_serial_pin": "D1"
+    },
+    
+    "encoder": {
+        "rotary": [
+            { "pin_a": "F4", "pin_b": "F5", "resolution": 4 },
+        ]
     },
     
     "layouts": {

@@ -1,0 +1,9 @@
+#pragma once
+
+#define DYNAMIC_KEYMAP_LAYER_COUNT 3
+
+#define MASTER_RIGHT
+
+#define ENCODER_A_PINS { F4 }
+#define ENCODER_B_PINS { F5 }
+#define ENCODER_RESOLUTION_RIGHT 4
