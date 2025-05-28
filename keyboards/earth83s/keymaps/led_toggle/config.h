@@ -1,0 +1,5 @@
+#pragma once
+
+#define DYNAMIC_KEYMAP_LAYER_COUNT 5
+
+#define EECONFIG_USER_DATA_SIZE 1
