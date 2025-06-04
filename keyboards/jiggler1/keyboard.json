@@ -1,0 +1,43 @@
+{
+    "manufacturer": "A'sKey",
+    "keyboard_name": "jiggler1",
+    "maintainer": "A'sKey",
+    "bootloader": "rp2040",
+    "diode_direction": "COL2ROW",
+    "features": {
+        "bootmagic": true,
+        "command": false,
+        "console": false,
+        "extrakey": true,
+        "mousekey": true,
+        "nkro": false,
+        "rgblight": true
+    },
+    "matrix_pins": {
+        "direct": [
+            ["GP0"]
+        ]
+    },
+    "rgblight": {
+        "led_count": 1
+    },
+    
+    "ws2812": {
+        "driver": "vendor",
+        "pin": "GP16"
+    },
+    "processor": "RP2040",
+    "url": "",
+    "usb": {
+        "device_version": "1.0.0",
+        "pid": "0x9901",
+        "vid": "0x4144"
+    },
+    "layouts": {
+        "LAYOUT": {
+            "layout": [
+                {"matrix": [0, 0], "x": 0, "y": 0}
+            ]
+        }
+    }
+}
