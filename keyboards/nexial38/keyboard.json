@@ -21,12 +21,12 @@
     
     "encoder": {
         "rotary": [
-                { "pin_a": "GP10", "pin_b": "GP11", "resolution": 4, "name": "encoder0" },
-                { "pin_a": "GP12", "pin_b": "GP13", "resolution": 4, "name": "encoder1" },
-                { "pin_a": "GP14", "pin_b": "GP15", "resolution": 4, "name": "encoder2" },
-                { "pin_a": "GP17", "pin_b": "GP16", "resolution": 4, "name": "encoder3" },
-                { "pin_a": "GP18", "pin_b": "GP19", "resolution": 4, "name": "encoder4" },
-                { "pin_a": "GP21", "pin_b": "GP20", "resolution": 4, "name": "encoder5" },
+                { "pin_a": "GP10", "pin_b": "GP11", "resolution": 4 },
+                { "pin_a": "GP12", "pin_b": "GP13", "resolution": 4 },
+                { "pin_a": "GP14", "pin_b": "GP15", "resolution": 4 },
+                { "pin_a": "GP17", "pin_b": "GP16", "resolution": 4 },
+                { "pin_a": "GP18", "pin_b": "GP19", "resolution": 4 },
+                { "pin_a": "GP21", "pin_b": "GP20", "resolution": 4 },
         ]
     },
     "processor": "RP2040",
