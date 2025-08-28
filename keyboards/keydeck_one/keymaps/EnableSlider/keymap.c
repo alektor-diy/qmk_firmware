@@ -2,12 +2,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 
 #include QMK_KEYBOARD_H
-#include "analog.h"
-
-#define SLIDER_THRESHOLD 20  // 感度（値の差がこの範囲以上なら動作）
-#define SLIDER_MAX 1023      // 10bit ADC最大値
-
-static uint16_t last_slider_val = 0;
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
@@ -168,10 +162,17 @@ const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][NUM_DIRECTIONS] = {
 };
 #endif
 
+#include "analog.h"
+
+#define SLIDER_ADC_PIN GP29
+#define SLIDER_THRESHOLD 20  // 値の変化がこの範囲を超えたら動作
+#define SLIDER_MAX 1023      // ADCの最大値（10bit）
+
+static uint16_t last_slider_val = 0;
+
 void matrix_scan_user(void) {
     uint16_t slider_val = analogReadPin(SLIDER_ADC_PIN);
 
-    // 値が変化した場合だけ処理
     if (slider_val > last_slider_val + SLIDER_THRESHOLD) {
         tap_code(KC_VOLU);
         last_slider_val = slider_val;

@@ -1,0 +1,8 @@
+#pragma once
+
+#define DYNAMIC_KEYMAP_LAYER_COUNT 10
+
+#define I2C0_SDA_PIN GP23
+#define I2C0_SCL_PIN GP22
+#define I2C0_CLOCK_SPEED 400000
+#define OLED_BRIGHTNESS 128  // 任意、0〜255

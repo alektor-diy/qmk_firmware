@@ -1,0 +1,5 @@
+VIA_ENABLE = yes
+ANALOG_DRIVER_REQUIRED = yes
+
+OLED_ENABLE = yes
+I2C_DRIVER = i2c_master

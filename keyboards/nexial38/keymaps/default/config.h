@@ -1,4 +1,0 @@
-#pragma once
-
-#define DYNAMIC_KEYMAP_LAYER_COUNT 10
-#define SLIDER_ADC_PIN GP29
